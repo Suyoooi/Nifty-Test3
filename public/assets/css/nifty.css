@@ -541,8 +541,8 @@ body[style*="background"]:not(.boxed-layout) > .front-container,
 }
 
 .brand-img img {
-  width: 27px;
-  height: 27px;
+  width: 130px;
+  height: 21px;
 }
 
 .brand-title {
