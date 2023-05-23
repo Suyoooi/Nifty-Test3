@@ -1,8 +1,4 @@
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
-
-export default function Home() {
+export default function EmsSrvr() {
   return (
     <>
       <section id="content" className="content">
