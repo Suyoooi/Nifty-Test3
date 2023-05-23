@@ -22,6 +22,7 @@ export default function Header() {
                 />
               </a>
               {/* <!-- Brand title --> */}
+              <div className="brand-title">ACell Product</div>
             </div>
           </div>
           {/* <!-- End - Brand --> */}
@@ -52,6 +53,7 @@ export default function Header() {
                   aria-label="Megamenu dropdown"
                   aria-expanded="false"
                 >
+                  epozen
                   <i className="psi-layout-grid"></i>
                 </button>
 
@@ -259,7 +261,7 @@ export default function Header() {
               {/* <!-- Notification Dropdown --> */}
               <div className="dropdown">
                 {/* <!-- Toggler --> */}
-                <button
+                {/* <button
                   className="header__btn btn btn-icon btn-sm"
                   type="button"
                   data-bs-toggle="dropdown"
@@ -272,7 +274,7 @@ export default function Header() {
                       <span className="visually-hidden">unread messages</span>
                     </span>
                   </span>
-                </button>
+                </button> */}
 
                 {/* <!-- Notification dropdown menu --> */}
                 <div className="dropdown-menu dropdown-menu-end w-md-300px">

@@ -28,18 +28,21 @@ export default function Sidebar() {
         <div className="mainnav__inner">
           <div className="pb-5 mainnav__top-content scrollable-content">
             <div className="py-3 mainnav__categoriy">
-              {/* <div style={{ display: "flex", justifyContent: "space-between" }}>
-                <h4 className="px-3 mt-0 mainnav__caption fw-bold">TIBCO</h4>
-                <img src="/img/icon/vector.png" style={{ width: 20, height: 20, cursor: "pointer" }} />
-              </div> */}
-              {/* <h5 className="px-3 mt-0 mainnav__caption fw-bold">
-                <img src="/img/icon/tibcoServer.png"
-                  style={{ width: 16, height: 16 }}
+              <div style={{ display: "flex", justifyContent: "space-between" }}>
+                <h4 className="mt-0 mainnav__caption fw-bold">TIBCO</h4>
+                <img
+                  src="/assets/img/icon/vector.png"
+                  style={{ width: 20, height: 20, cursor: "pointer" }}
+                />
+              </div>
+              <h5 className="mainnav__caption fw-bold mt-4">
+                <img
+                  src="/assets/img/icon/tibcoServer.png"
+                  style={{ width: 16, height: 16, marginRight: 6 }}
                 />
                 TIBCO 서버
-              </h5> */}
-              <h6 className="mainnav__caption mt-0 px-3 fw-bold">TIBCO</h6>
-              <ul className="mainnav__menu nav flex-column">
+              </h5>
+              {/* <ul className="mainnav__menu nav flex-column">
                 <li className="nav-item has-sub">
                   <Link href="#" className="nav-link">
                     <Image
@@ -48,10 +51,14 @@ export default function Sidebar() {
                       width={16}
                       height={16}
                     />
-                    <span className="nav-label ms-1">TIBCO 서버 관리</span>
+                    <span className="nav-label ms-1">TIBCO 서버</span>
                   </Link>
                 </li>
-
+              </ul> */}
+            </div>
+            <div className="mainnav__categoriy">
+              {/* <h6 className="px-3 mt-0 mainnav__caption fw-bold">Submenus</h6> */}
+              <ul className="mainnav__menu nav flex-column">
                 <li className="nav-item has-sub">
                   <Link href="#" className="mininav-toggle nav-link collapsed">
                     <Image
@@ -63,7 +70,7 @@ export default function Sidebar() {
                     <span className="nav-label ms-1">EMS</span>
                   </Link>
 
-                  <ul className="mininav-content nav collapse">
+                  <ul className="mininav-content nav  collapsing show">
                     {TIBCO_SERVER_EMS_LIST.map((data) => (
                       <li className="nav-item" key={data.title}>
                         <a
@@ -82,13 +89,8 @@ export default function Sidebar() {
                     ))}
                   </ul>
                 </li>
-              </ul>
-            </div>
-            <div className="py-3 mainnav__categoriy">
-              <h6 className="px-3 mt-0 mainnav__caption fw-bold">Submenus</h6>
-              <ul className="mainnav__menu nav flex-column">
-                {/* <li className="nav-item has-sub">
-                  <a href="#" className="mininav-toggle nav-link">
+                <li className="nav-item has-sub">
+                  <a href="#" className="mininav-toggle nav-link collapsed">
                     <i className="pli-data-center fs-5 me-2"></i>
                     <span className="nav-label ms-1">Submenu</span>
                   </a>
@@ -109,20 +111,20 @@ export default function Sidebar() {
                       </a>
                     </li>
                   </ul>
-                </li> */}
+                </li>
                 <li className="nav-item has-sub">
-                  <a href="#" className="mininav-toggle nav-link active">
+                  <a href="#" className="mininav-toggle nav-link collapsed">
                     <i className="pli-idea fs-5 me-2"></i>
                     <span className="nav-label ms-1">Active Item</span>
                   </a>
-                  <ul className="mininav-content nav collapse">
+                  <ul className="mininav-content nav collapsing show">
                     <li className="nav-item">
                       <a href="#" className="nav-link">
                         Submenu Items
                       </a>
                     </li>
                     <li className="nav-item">
-                      <a href="#" className="nav-link active">
+                      <a href="#" className="nav-link">
                         Active state
                       </a>
                     </li>
