@@ -1,5 +1,3 @@
-import Script from "next/script";
-
 import Header from "../header";
 import Sidebar from "../sidebar";
 
@@ -15,10 +13,10 @@ function Layout(props: { children: React.ReactNode }) {
         <Header />
         <Sidebar />
       </div>
-      <Script src="/assets/vendors/popper.min.js" defer />
-      <Script src="/assets/vendors/bootstrap.min.js" defer />
-      <Script src="/assets/js/nifty.js" defer />
-      <Script src="/assets/vendors/mdDateTimePicker.min.js" defer />
+      <script src="/assets/vendors/popper.min.js" defer></script>
+      <script src="/assets/vendors/bootstrap.min.js" defer></script>
+      <script src="/assets/js/nifty.js" defer></script>
+      <script src="/assets/vendors/mdDateTimePicker.min.js" defer></script>
     </>
   );
 }
