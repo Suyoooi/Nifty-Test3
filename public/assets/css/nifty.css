@@ -541,8 +541,8 @@ body[style*="background"]:not(.boxed-layout) > .front-container,
 }
 
 .brand-img img {
-  width: 130px;
-  height: 21px;
+  width: 27px;
+  height: 27px;
 }
 
 .brand-title {
@@ -1317,6 +1317,7 @@ body[style*="background"]:not(.boxed-layout) > .front-container,
   height: 100%;
   overflow: auto;
   width: 100%;
+  background-color: #f3f3f3;
 }
 
 .mainnav__top-content.os-host-overflow {
@@ -1623,7 +1624,8 @@ body[style*="background"]:not(.boxed-layout) > .front-container,
   :where(h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6),
 .sb--unite .sidebar .nav-link.active,
 .sb--unite .sidebar .nav-link:hover,
-.sb--unite .sidebar .nav-link:focus {
+.sb--unite .sidebar .nav-link:focus,
+.sb--unite .sidebar .nav-link:active {
   color: white;
 }
 
@@ -1633,8 +1635,8 @@ body[style*="background"]:not(.boxed-layout) > .front-container,
 
 .sb--unite .sidebar .btn-primary,
 .sb--unite .sidebar .form-switch .form-check-input:checked {
-  background-color: #516c88;
-  border-color: #516c88;
+  background-color: #515560;
+  border-color: #515560;
 }
 
 .sb--unite .sidebar .btn-link {
