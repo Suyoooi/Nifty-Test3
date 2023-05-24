@@ -30,10 +30,10 @@ export default function Sidebar() {
             <div className="py-3 mainnav__categoriy">
               <div style={{ display: "flex", justifyContent: "space-between" }}>
                 <h4 className="mt-0 mainnav__caption fw-bold">TIBCO</h4>
-                <img
+                {/* <img
                   src="/assets/img/icon/vector.png"
                   style={{ width: 20, height: 20, cursor: "pointer" }}
-                />
+                /> */}
               </div>
               <h5 className="mainnav__caption fw-bold mt-4">
                 <img
@@ -59,31 +59,23 @@ export default function Sidebar() {
             <div className="mainnav__categoriy">
               {/* <h6 className="px-3 mt-0 mainnav__caption fw-bold">Submenus</h6> */}
               <ul className="mainnav__menu nav flex-column">
+                <li className="nav-item has-sub"></li>
                 <li className="nav-item has-sub">
-                  <Link href="#" className="mininav-toggle nav-link collapsed">
+                  <a href="#" className="mininav-toggle nav-link collapsed">
                     <Image
                       src="/assets/img/icon/ems.png"
                       alt="EMS Server"
                       width={16}
                       height={16}
                     />
+                    <i className="pli-data-center fs-5 me-2"></i>
                     <span className="nav-label ms-1">EMS</span>
-                  </Link>
-
-                  <ul className="mininav-content nav  collapsing show">
+                  </a>
+                  <ul className="mininav-content nav collapse">
                     {TIBCO_SERVER_EMS_LIST.map((data) => (
-                      <li className="nav-item" key={data.title}>
-                        <a
-                          href={data.url}
-                          className="nav-link mininav-toggle collapsed"
-                        >
-                          <i className="pli-home fs-5 me-2"></i>
-                          <span
-                            className="nav-label mininav-content ms-1"
-                            style={{ color: "#666666" }}
-                          >
-                            {data.title}
-                          </span>
+                      <li className="nav-item">
+                        <a href={data.url} className="nav-link">
+                          {data.title}
                         </a>
                       </li>
                     ))}
@@ -91,29 +83,12 @@ export default function Sidebar() {
                 </li>
                 <li className="nav-item has-sub">
                   <a href="#" className="mininav-toggle nav-link collapsed">
-                    <i className="pli-data-center fs-5 me-2"></i>
-                    <span className="nav-label ms-1">Submenu</span>
-                  </a>
-                  <ul className="mininav-content nav collapse">
-                    <li className="nav-item">
-                      <a href="#" className="nav-link">
-                        Submenu Items
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a href="#" className="nav-link">
-                        Submenu Items
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a href="#" className="nav-link">
-                        Submenu Items
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li className="nav-item has-sub">
-                  <a href="#" className="mininav-toggle nav-link collapsed">
+                    <Image
+                      src="/assets/img/icon/ems.png"
+                      alt="EMS Server"
+                      width={16}
+                      height={16}
+                    />
                     <i className="pli-idea fs-5 me-2"></i>
                     <span className="nav-label ms-1">Active Item</span>
                   </a>
