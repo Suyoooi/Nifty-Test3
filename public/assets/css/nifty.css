@@ -582,7 +582,7 @@ body[style*="background"]:not(.boxed-layout) > .front-container,
 
 .header__btn:hover,
 .header__btn:focus {
-  background-color: #1f3c5a;
+  background-color: none;
   color: white;
 }
 
