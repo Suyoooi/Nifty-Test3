@@ -1,5 +1,9 @@
+// "use client";
+// This is a client component 👈🏽
+
+import { useState } from "react";
+
 import Link from "next/link";
-import Image from "next/image";
 
 // // /*---Nifty Css---*/
 // import "../../../public/assets/css/bootstrap.css";
@@ -42,15 +46,35 @@ export default function Header() {
                 />
               </button>
               {/* <!-- Searchbox --> */}
-              <div style={{ marginLeft: 20, cursor: "pointer" }}>
-                메뉴 전체보기
-                <img
-                  style={{ width: 14, marginBottom: 4, marginLeft: 2 }}
-                  src="/assets/img/icon/dropdownVector.png"
-                />
+              <div className="dropdown">
+                <button
+                  className="btn dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  메뉴 전체보기
+                </button>
+                <ul className="dropdown-menu">
+                  TIBCO
+                  <li>
+                    <button className="dropdown-item" type="button">
+                      Action
+                    </button>
+                  </li>
+                  <li>
+                    <button className="dropdown-item" type="button">
+                      Another action
+                    </button>
+                  </li>
+                  <li>
+                    <button className="dropdown-item" type="button">
+                      Something else here
+                    </button>
+                  </li>
+                </ul>
               </div>
             </div>
-
             {/* <!-- Content Header - Right Side: --> */}
             <div className="header__content-end">
               {/* <!-- Mega Dropdown --> */}
@@ -292,8 +316,7 @@ export default function Header() {
                       <span className="visually-hidden">unread messages</span>
                     </span>
                   </span>
-                </button> */}
-
+                </button>
                 {/* <!-- Notification dropdown menu --> */}
                 <div className="dropdown-menu dropdown-menu-end w-md-300px">
                   <div className="border-bottom px-3 py-2 mb-3">
