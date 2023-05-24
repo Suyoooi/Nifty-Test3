@@ -275,7 +275,7 @@ export default function Header() {
               {/* <!-- Notification Dropdown --> */}
               <div className="dropdown">
                 {/* <!-- Toggler --> */}
-                {/* <button
+                <button
                   className="header__btn btn btn-icon btn-sm"
                   type="button"
                   data-bs-toggle="dropdown"
