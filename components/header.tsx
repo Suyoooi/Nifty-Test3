@@ -36,16 +36,29 @@ export default function Header() {
                 aria-label="Nav Toggler"
               >
                 <i className="psi-list-view"></i>
-                버튼
+                <img
+                  src="/assets/img/icon/menuButton.svg"
+                  style={{ width: 20, height: 20, cursor: "pointer" }}
+                />
               </button>
               {/* <!-- Searchbox --> */}
+              <div style={{ marginLeft: 20, cursor: "pointer" }}>
+                메뉴 전체보기
+                <img
+                  style={{ width: 14, marginBottom: 4, marginLeft: 2 }}
+                  src="/assets/img/icon/dropdownVector.png"
+                />
+              </div>
             </div>
+
             {/* <!-- Content Header - Right Side: --> */}
             <div className="header__content-end">
               {/* <!-- Mega Dropdown --> */}
               <div className="dropdown">
                 {/* <!-- Toggler --> */}
-                <button
+                <span style={{ marginRight: 6 }}>epozen / 권수연</span>
+                {/* 첫 번째 버튼 */}
+                {/* <button
                   className="header__btn btn btn-icon btn-sm"
                   type="button"
                   data-bs-toggle="dropdown"
@@ -53,10 +66,12 @@ export default function Header() {
                   aria-label="Megamenu dropdown"
                   aria-expanded="false"
                 >
-                  epozen
+                  <img
+                    src="/assets/img/icon/profile.png"
+                    style={{ width: 22, height: 22 }}
+                  />
                   <i className="psi-layout-grid"></i>
-                </button>
-
+                </button> */}
                 {/* <!-- Mega Dropdown Menu --> */}
                 <div className="dropdown-menu dropdown-menu-end p-3 mega-dropdown">
                   <div className="row">
@@ -257,7 +272,6 @@ export default function Header() {
                 </div>
               </div>
               {/* <!-- End - Mega Dropdown --> */}
-
               {/* <!-- Notification Dropdown --> */}
               <div className="dropdown">
                 {/* <!-- Toggler --> */}
@@ -392,10 +406,10 @@ export default function Header() {
                 </div>
               </div>
               {/* <!-- End - Notification dropdown --> */}
-
               {/* <!-- User dropdown --> */}
               <div className="dropdown">
                 {/* <!-- Toggler --> */}
+                {/* 두 번째 버튼 */}
                 <button
                   className="header__btn btn btn-icon btn-sm"
                   type="button"
@@ -403,9 +417,12 @@ export default function Header() {
                   aria-label="User dropdown"
                   aria-expanded="false"
                 >
+                  <img
+                    src="/assets/img/icon/profile.png"
+                    style={{ width: 22, height: 22 }}
+                  />
                   <i className="psi-male"></i>
                 </button>
-
                 {/* <!-- User dropdown menu --> */}
                 <div className="dropdown-menu dropdown-menu-end w-md-450px">
                   {/* <!-- User dropdown header --> */}
@@ -413,15 +430,15 @@ export default function Header() {
                     <div className="flex-shrink-0">
                       <img
                         className="img-sm rounded-circle"
-                        src="./assets/img/profile-photos/1.png"
+                        src="./assets/img/icon/bear.png"
                         alt="Profile Picture"
                         loading="lazy"
                       />
                     </div>
                     <div className="flex-grow-1 ms-3">
-                      <h5 className="mb-0">Aaron Chavez</h5>
+                      <h5 className="mb-0">권수연</h5>
                       <span className="text-muted fst-italic">
-                        aaron_chavez@example.com
+                        honghonghong@epzen.com
                       </span>
                     </div>
                   </div>
@@ -500,11 +517,16 @@ export default function Header() {
               </div>
               {/* <!-- End - User dropdown --> */}
               {/* <!-- Sidebar Toggler --> */}
+              {/* 세 번째 버튼 */}
               <button
                 className="sidebar-toggler header__btn btn btn-icon btn-sm"
                 type="button"
                 aria-label="Sidebar button"
               >
+                <img
+                  src="/assets/img/icon/lock.png"
+                  style={{ width: 22, height: 22 }}
+                />
                 <i className="psi-dot-vertical"></i>
               </button>
             </div>
