@@ -283,6 +283,10 @@ export default function Header() {
                   aria-expanded="false"
                 >
                   <span className="d-block position-relative">
+                    <img
+                      style={{ width: 20 }}
+                      src="/assets/img/icon/notification.png"
+                    />
                     <i className="psi-bell"></i>
                     <span className="badge badge-super rounded bg-danger p-1">
                       <span className="visually-hidden">unread messages</span>
